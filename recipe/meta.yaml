@@ -1,5 +1,5 @@
 {% set name = "opticalglass" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eee055dfbf8b0208818ba6aa43fb617eeee5663e442872eaf54304874120d8cc
+  sha256: c991aeb973950d35d1a529d7b12dc8991ad261e084d18e36934b8402e000860a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - glassmap = opticalglass.glassmapviewer:main
@@ -44,11 +44,11 @@ about:
   license_family: BSD
   license_file: LICENSE
   description: |
-   opticalglass is a Python package to interface with optical glass
-   manufacturers glass data spreadsheets. It provides a neutral API
-   to query data from multiple catalogs. A Matplotlib graphical glass
-   map display can be used from scripts and the Qt-based glassmap app
-   is built on top of this capability.
+    opticalglass is a Python package to interface with optical glass
+    manufacturers glass data spreadsheets. It provides a neutral API
+    to query data from multiple catalogs. A Matplotlib graphical glass
+    map display can be used from scripts and the Qt-based glassmap app
+    is built on top of this capability.
   doc_url: https://opticalglass.readthedocs.io/
   dev_url: https://github.com/mjhoptics/opticalglass
 
