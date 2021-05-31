@@ -1,5 +1,5 @@
 {% set name = "opticalglass" %}
-{% set version = "0.7.5" %}
+{% set version = "0.7.6" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1ac970487734cf004e005bb19bca4b2b6f650f3cf093290436ec42b9db71c8b6
+  sha256: 91eb5ca699fab922eeca61ed00d74a565473fba46687a9a052a14dd979ce8c8a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - glassmap = opticalglass.glassmapviewer:main
