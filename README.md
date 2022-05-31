@@ -15,9 +15,10 @@ Documentation: https://opticalglass.readthedocs.io/
 
 opticalglass is a Python package to interface with optical glass
 manufacturers glass data spreadsheets. It provides a neutral API
-to query data from multiple catalogs. A Matplotlib graphical glass
-map display can be used from scripts and the Qt-based glassmap app
-is built on top of this capability.
+to query data from multiple catalogs as well as the RefractiveIndex.Info
+website. A Matplotlib graphical glass map display can be used
+from scripts and the Qt-based glassmap app is built on top of
+this capability.
 
 
 Current build status
