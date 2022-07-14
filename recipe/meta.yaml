@@ -11,7 +11,7 @@ source:
   sha256: 4494b97f5dfd6c55e3c7eebf29ee29cb346ee3b8d6a8c028338f9aa151568d4d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - glassmap = opticalglass.glassmapviewer:main
@@ -31,7 +31,7 @@ requirements:
     - openpyxl >=3.0.9
     - requests >=2.27.1
     - pyyaml >=6.0
-    - pyqt <5.13
+    - pyqt <5.16
 
 test:
   imports:
