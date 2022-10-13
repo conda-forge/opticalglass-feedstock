@@ -11,7 +11,7 @@ source:
   sha256: ec69707cf256429938916a1aff66f39fa0d97ef004fbfaf1a13bf9084409879b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - glassmap = opticalglass.glassmapviewer:main
@@ -20,6 +20,9 @@ build:
 requirements:
   host:
     - pip
+    - pyscaffold >=4.3
+    - setuptools >=46.1.0
+    - setuptools-scm
     - python >=3.8
   run:
     - python >=3.8
