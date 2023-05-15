@@ -1,11 +1,11 @@
-About opticalglass
-==================
+About opticalglass-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opticalglass-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/opticalglass/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opticalglass-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for reading commercial optical glass catalogs
 
