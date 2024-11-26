@@ -1,5 +1,5 @@
 {% set name = "opticalglass" %}
-{% set version = "1.0.9" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1f55912a5e806ba6bb9e66fbc2dc1a3e33648f7760526c7db5079b729dcc5b0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a59dccf6f04aa3d243c6a662970473a2e6777e31963f6baf1f4993417cd00906
 
 build:
   number: 0
