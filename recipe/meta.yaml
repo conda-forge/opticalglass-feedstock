@@ -11,7 +11,7 @@ source:
   sha256: a59dccf6f04aa3d243c6a662970473a2e6777e31963f6baf1f4993417cd00906
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - glassmap = opticalglass.glassmapviewer:main
