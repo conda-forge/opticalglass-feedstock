@@ -1,6 +1,6 @@
 {% set name = "opticalglass" %}
-{% set version = "1.0.4" %}
-
+{% set version = "1.1.1" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ec69707cf256429938916a1aff66f39fa0d97ef004fbfaf1a13bf9084409879b
+  sha256: 3d2ec0d06e7e16dd4a76a34f1678abb7b8dfba195bb5e6c6ffb3ef1c046a85b0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - glassmap = opticalglass.glassmapviewer:main
@@ -25,16 +25,17 @@ requirements:
     - setuptools-scm
     - python >=3.8
   run:
-    - python >=3.8
-    - numpy >=1.21.5
-    - scipy >=1.7.3
-    - matplotlib-base >=3.5.1
-    - pandas >=1.3.5
+    - python >={{ python_min }}
+    - numpy >=2.3.1
+    - scipy >=1.16.0
+    - matplotlib-base >=3.10.3
+    - pandas >=2.3.0
     - xlrd >=2.0.1
-    - openpyxl >=3.0.9
-    - requests >=2.27.1
-    - pyyaml >=6.0
-    - pyqt <5.16
+    - openpyxl >=3.1.5
+    - requests >=2.32.4
+    - json_tricks >=3.17.3
+    - pyyaml >=6.0.2
+    - pyside6 >=6.9.1
 
 test:
   imports:
