@@ -1,6 +1,6 @@
 {% set name = "opticalglass" %}
-{% set version = "1.1.1" %}
-{% set python_min = "3.11" %}
+{% set version = "1.2.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3d2ec0d06e7e16dd4a76a34f1678abb7b8dfba195bb5e6c6ffb3ef1c046a85b0
+  sha256: bee2328232e30c602dac68b093c6b304c698f788673378c1afcefb44de5c4c8f
 
 build:
   number: 0
@@ -26,16 +26,16 @@ requirements:
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
-    - numpy >=2.3.1
-    - scipy >=1.16.0
-    - matplotlib-base >=3.10.3
-    - pandas >=2.3.0
-    - xlrd >=2.0.1
+    - numpy >=2.4.3
+    - scipy >=1.17.1
+    - matplotlib-base >=3.10.8
+    - pandas >=3.0.2
+    - xlrd >=2.0.2
     - openpyxl >=3.1.5
-    - requests >=2.32.4
+    - requests >=2.33.1
     - json_tricks >=3.17.3
-    - pyyaml >=6.0.2
-    - pyside6 >=6.9.1
+    - pyyaml >=6.0.3
+    - pyside6 >=6.11.0
 
 test:
   imports:
